@@ -13,12 +13,12 @@ do
 
     if [ $monitor -eq "1" ]; then
         vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
-        sleep 10
+        sleep 1
         new=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
     
         if [ $new -ge $vol ] && [ $vol -ge 75 ]; then
             if [ $warn -eq 0 ]; then
-                notify-send "High volume warning!" "Listing to music/videos at this volume can cause permanent hearing damage!"
+                notify-send "High volume warning!" "Listening to music/videos at this volume can cause permanent hearing damage!"
                 warn=1
             elif [ $warn -eq 1 ]; then
                 notify-send "High volume warning!" "Your volume is still too high! Turning it down..."
