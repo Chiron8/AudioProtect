@@ -1,5 +1,7 @@
 # AudioProtect
 
+[!image](https://github.com/Chiron8/AudioProtect/blob/master/image.png)
+
 ## Trying to protect your ears <3
 
 A simple program that monitors output devices and the current volume to make sure percieved sound is at a safe volume
