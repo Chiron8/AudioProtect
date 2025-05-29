@@ -1,6 +1,6 @@
 # AudioProtect
 
-[!image](https://github.com/Chiron8/AudioProtect/blob/master/image.png)
+![image](https://github.com/Chiron8/AudioProtect/blob/master/image.png)
 
 ## Trying to protect your ears <3
 
