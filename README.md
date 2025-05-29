@@ -4,7 +4,7 @@
 
 A simple program that monitors output devices and the current volume to make sure percieved sound is at a safe volume
 
-Requirements:
+#### Requirements:
 
 - PipeWire
 - A notifaction daemon (e.g. Dunst or SwayNC)
