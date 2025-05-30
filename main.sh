@@ -4,6 +4,7 @@ warn=0
 
 while true
 do
+    sleep 120
     monitor="0"
     vol=0
     new=0
@@ -13,7 +14,7 @@ do
 
     if [ $monitor -eq "1" ]; then
         vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
-        sleep 1
+        sleep 10
         new=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2 * 100)}')
     
         if [ $new -ge $vol ] && [ $vol -ge 75 ]; then
@@ -25,7 +26,7 @@ do
                 pactl set-sink-volume @DEFAULT_SINK@ 50%
                 warn=2
             elif [[ $warn -eq 2 ]]; then
-                sleep 1780
+                sleep 1680
                 warn=0
             fi
         fi 
