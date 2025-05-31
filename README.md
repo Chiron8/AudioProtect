@@ -10,6 +10,7 @@ A simple program that monitors output devices and the current volume to make sur
 
 - PipeWire
 - A notifaction daemon (e.g. Dunst or SwayNC)
+- Some headphones or earbuds
 
 #### Installation:
 
